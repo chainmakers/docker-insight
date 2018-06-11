@@ -1,5 +1,9 @@
 # Komodo Insight Explorer on Docker
 
+## Requirements
+* **Docker Engine 1.12.0+**
+* **Docker Compose 1.9.0+**
+
 ## Clone the repo (or fork it)
 ```
 git clone https://github.com/Monaize/docker-insight.git
