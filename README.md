@@ -6,12 +6,11 @@
 
 ## Clone the repo (or fork it)
 ```
-git clone https://github.com/Monaize/docker-insight.git
-
-cd docker-insight.git
+$ git clone https://github.com/Monaize/docker-insight.git
+$ cd docker-insight.git
 ``` 
 
-## Edit .env file with your assetchain parameters
+## Edit .env file with your assetchain parameters  
 ### Defaults:
 ```
 AC_NAME=MNZ
