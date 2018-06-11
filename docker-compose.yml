@@ -2,13 +2,13 @@ version: '2.1'
 
 services:
   komodo-core:
+    env_file:
+      - .env
     sysctls:
       - net.ipv6.conf.all.disable_ipv6=1
     networks:
       - core
     image: monaize/komodo-ac:dev
-    environment:
-      - AC_NAME=MNZ
     command:
       -printtoconsole=1
       -server=1
@@ -26,25 +26,17 @@ services:
       -whitelist=127.0.0.1
       -rpcallowip=127.0.0.1
       -rpcallowip=172.0.0.0/8
-      -addnode=51.15.138.138
-      -addnode=51.15.86.136
-      -addnode=51.15.94.249
-      -addnode=51.15.80.18
-      -addnode=51.15.91.40
-      -addnode=51.15.54.2
-      -addnode=51.15.86.31
-      -addnode=51.15.82.29
-      -addnode=51.15.89.155
-      -addnode=51.15.202.191
-      -ac_supply=257142858
+      -ac_supply=${AC_SUPPLY}
     volumes:
       - komodo-data:/home/komodo/.komodo
       - zcash-params:/home/komodo/.zcash-params
 
   komodo-insight:
+    env_file:
+      - .env
     networks:
       - core
-    image: monaize/insight:latest
+    image: monaize/insight:0.3
     ports:
       - 3001:3001
 
