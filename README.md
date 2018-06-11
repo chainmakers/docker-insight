@@ -8,7 +8,7 @@ cd docker-insight.git
 ``` 
 
 ## Edit .env file with your assetchain parameters
-* Defaults: 
+### Defaults:
 ```
 AC_NAME=MNZ
 AC_SUPPLY=257142858
