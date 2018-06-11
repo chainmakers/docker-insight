@@ -1,5 +1,4 @@
-# docker-komodo
-
+# Komodo Insight Explorer on Docker
 
 ## Clone the repo (or fork it)
 ```
@@ -10,8 +9,10 @@ cd docker-insight.git
 
 ## Edit .env file with your assetchain parameters
 * Defaults: 
-    * AC_NAME=MNZ
-    * AC_SUPPLY=257142858
+```
+AC_NAME=MNZ
+AC_SUPPLY=257142858
+```
 
 ## Get up !
 ```
@@ -19,4 +20,4 @@ docker-compose up
 ```
 
 
-Inspired by https://github.com/DeckerSU/komodo-explorers-install
+_Inspired by https://github.com/DeckerSU/komodo-explorers-install_
