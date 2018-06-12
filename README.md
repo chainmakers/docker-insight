@@ -19,6 +19,7 @@ AC_SUPPLY=257142858
 
 ## Get up !
 ```
+docker volume create zcash-params
 docker-compose up
 ```
 
